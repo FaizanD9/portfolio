@@ -1,0 +1,261 @@
+<!-- FILE: index_en.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faizan ISHAQ - Portfolio</title>
+  <meta name="description" content="Portfolio of a computer science student — projects, skills, background and contact." />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+        <a href="#" class="brand">
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+            <span class="brand-text">I. Faizan</span>
+        </a>
+
+        <!-- Language switch button -->
+        <a href="index.html" class="lang-switch">FR</a>
+
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Open menu</span>
+          ☰
+         </button>
+
+      <nav id="nav-links" class="nav-links">
+        <a href="#presentation">About</a>
+        <a href="#competences">Skills</a>
+        <a href="#projets">Projects</a>
+        <a href="#parcours">Background</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / About -->
+  <main>
+    <section id="presentation" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-photo">
+          <img src="images/photo-profil.jpg" alt="Profile picture" id="profilePhoto">
+        </div>
+        <div class="hero-text">
+          <h1>Hello — I am <span class="accent-gold">Faizan ISHAQ</span></h1>
+          <h2>Computer Science Student — BUT 2nd year</h2>
+          <p>
+            I am a second-year computer science student passionate about software development and system architecture. 
+            I enjoy designing solutions where performance, readability and maintainability go hand in hand. 
+            Currently, I mainly practice:
+            <strong>Java, Python and SQL</strong>.
+          </p>
+
+          <p>
+            Since starting university, I have participated in projects ranging from social network simulations to a chess game. 
+            I enjoy teamwork, coding and code review. This portfolio gathers a selection of my best projects and details 
+            my background, skills, and contact information.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projets">See my projects</a>
+            <a class="btn btn-ghost" href="cv.pdf" download> Download my CV (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="competences" class="section section-competences">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technical knowledge and tools.</p>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <img src="images/java.png" alt="Java" class="skill-icon">
+            <h3>Java</h3>
+            <p>Experience in object-oriented programming, back-end application development.</p>
+          </article>
+
+          <article class="skill-card">
+            <img src="images/python.png" alt="Python" class="skill-icon">
+            <h3>Python</h3>
+            <p>Writing functions, programs, working with JSON files, and object-oriented programming.</p>
+          </article>
+
+          <article class="skill-card">
+            <img src="images/sql.png" alt="SQL" class="skill-icon">
+            <h3>SQL</h3>
+            <p>Modeling relational databases, query optimization, transactions, and query path analysis.</p>
+          </article>
+
+          <article class="skill-card">
+            <img src="images/bash.png" alt="Bash" class="skill-icon">
+            <h3>Bash</h3>
+            <p>Learning the basics of Bash Shell scripting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+        <!-- Projects -->
+    <section id="projets" class="section section-projets">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Five projects to convince you!</p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet1.png" alt="Project 1 — Chess Game" loading="lazy">
+              <div class="project-overlay">
+                <h3>Chess Game (Java)</h3>
+                <p>Use of OOP to create a chess game to be run in the terminal.</p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Java</span>
+              <span class="project-date">Jun 2025</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet2.png" alt="Project 2 — Social Network" loading="lazy">
+              <div class="project-overlay">
+                <h3>Social Network (Python/JSON files)</h3>
+                <p>Implementation of a social network in Python using JSON files.</p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Python</span>
+              <span class="project-date">Apr 2025</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet3.png" alt="Project 3 — Database Management with SQL" loading="lazy">
+              <div class="project-overlay">
+                <h3>Database Management with SQL</h3>
+                <p>Creation and manipulation with queries of a database filled from an Excel file.</p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">SQL</span>
+              <span class="project-date">May 2025</span>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet4.png" alt="Project 4 — Network Service Installation" loading="lazy">
+              <div class="project-overlay">
+                <h3>Network Service Installation (Bash)</h3>
+                <p>Writing files on a Linux Ubuntu machine to install a network service.</p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Bash</span>
+              <span class="project-date">Jul 2025</span>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet5.png" alt="Project 5 — Fictional Project Management" loading="lazy">
+              <div class="project-overlay">
+                <h3>Fictional Project Management</h3>
+                <p>Organization of a fictional summer camp. Complete project management.</p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Project Management</span>
+              <span class="project-date">May 2025</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Background -->
+    <section id="parcours" class="section section-parcours">
+      <div class="container">
+        <h2 class="section-title">Background</h2>
+        <p class="section-subtitle">A timeline of the key stages of my academic path.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Birth of the passion for computer science</h3>
+              <p>Fascination for technological objects. How does it work? Why does it do that?</p>
+              <time>From the beginning to the end</time>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>General Baccalaureate (A-level equivalent diploma)</h3>
+              <p>Lycée Maurice Utrillo — Honors. Specialities : Mathematics and Computer Science.</p>
+              <time>2024</time>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>IUT of Sorbonne Paris Nord University - BUT Computer Science (Bachelor)</h3>
+              <p>Currently in the second year, specializing in Application Realisation, Conception, Development, and Verification.</p>
+              <time>2024 — Present</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Interested ? Here is my information.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>E-mail</h3>
+            <p><a href="mailto:faizanishaq103@gmail.com">faizanishaq103@gmail.com</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h3>CV</h3>
+            <p><a href="cv.pdf" download>Download my CV (PDF)</a></p>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <div class="container footer-container">
+            <p>© <span id="currentYear"></span> Faizan ISHAQ — All rights reserved.</p>
+            <nav class="footer-nav">
+              <a href="#presentation">About</a>
+              <a href="#projets">Projects</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

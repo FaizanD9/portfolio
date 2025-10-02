@@ -1,0 +1,262 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faizan ISHAQ - Portfolio</title>
+  <meta name="description" content="Portfolio d'un étudiant en informatique — projets, compétences, parcours et contact." />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+        <a href="#" class="brand">
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+            <span class="brand-text">I. Faizan</span>
+        </a>
+
+        <!-- Bouton de changement de langue -->
+        <a href="index_en.html" class="lang-switch">EN</a>
+
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Ouvrir le menu</span>
+          ☰
+         </button>
+
+
+      <nav id="nav-links" class="nav-links">
+        <a href="#presentation">Présentation</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Présentation -->
+  <main>
+    <section id="presentation" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-photo">
+          <img src="images/photo-profil.jpg" alt="Photo de profil" id="profilePhoto">
+        </div>
+        <div class="hero-text">
+          <h1>Bonjour — Je suis <span class="accent-gold">Faizan ISHAQ</span></h1>
+          <h2>Étudiant en informatique — BUT 2ème année</h2>
+          <p>
+            Je suis un étudiant en deuxième année d'informatique passionné par le développement logiciel et l'architecture
+            des systèmes. J'aime concevoir des solutions où performance,
+            lisibilité et maintenance vont de pair. Actuellement, je pratique principalement :
+            <strong>Java, Python et SQL</strong>.
+          </p>
+
+          <p>
+            Depuis mon entrée à l'université, j'ai participé à des projets allant de simulations de réseaux sociaux à un jeu d'échec. J'apprécie le travail en équipe, l'écriture et la revue de code. Ce portfolio regroupe
+            une sélection de mes meilleurs projets et détaille mon parcours, mes compétences, et mes contacts.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+            <a class="btn btn-ghost" href="cv.pdf" download> Télécharger mon CV (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="section section-competences">
+      <div class="container">
+        <h2 class="section-title">Compétences</h2>
+        <p class="section-subtitle">Connaissances techniques et outils.</p>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <img src="images/java.png" alt="Java" class="skill-icon">
+            <h3>Java</h3>
+            <p>Expérience en programmation orientée objet, développement d'applications back-end.</p>
+          </article>
+
+          <article class="skill-card">
+            <img src="images/python.png" alt="Python" class="skill-icon">
+            <h3>Python</h3>
+            <p>Ecriture de fonctions, programmes, utilisation de fichier json, et programmation orientée objet.</p>
+          </article>
+
+          <article class="skill-card">
+            <img src="images/sql.png" alt="SQL" class="skill-icon">
+            <h3>SQL</h3>
+            <p>Modélisation de bases de données relationnelles, optimisation de requêtes, transactions et analyse de chemin utilisé.</p>
+          </article>
+
+          <article class="skill-card">
+            <img src="images/bash.png" alt="Bash" class="skill-icon">
+            <h3>Bash</h3>
+            <p>Apprentissage des bases en langage Bash Shell.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="section section-projets">
+      <div class="container">
+        <h2 class="section-title">Projets</h2>
+        <p class="section-subtitle">Cinq projets pour vous convaincre !</p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet1.png" alt="Projet 1 — Gestionnaire de tâches" loading="lazy">
+              <div class="project-overlay">
+                <h3>Jeu d'échec (Java)</h3>
+                <p>Utilisation de la POO pour créer un jeu d'échec à lancer dans le terminal.</p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Java</span>
+              <span class="project-date">Juin 2025</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet2.png" alt="Projet 2 — API météo" loading="lazy">
+              <div class="project-overlay">
+                <h3>Réseau social (Python/fichiers JSON)</h3>
+                <p>Implémentation d'un réseau social en python avec utilisation de fichiers JSON.</p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Python</span>
+              <span class="project-date">Avril 2025</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet3.png" alt="Projet 3 — Visualiseur SQL" loading="lazy">
+              <div class="project-overlay">
+                <h3>Gestion de base de données avec SQL</h3>
+                <p>Création et manipulation avec requêtes d'une base de donnée remplie à partir d'un fichier Excel.</p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">SQL</span>
+              <span class="project-date">Mai 2025</span>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet4.png" alt="Projet 4 — Automatisation" loading="lazy">
+              <div class="project-overlay">
+                <h3>Installation de service réseau (Bash)</h3>
+                <p>Ecriture de fichiers dans une machine Linux Ubuntu pour installer un service réseau.</p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Bash</span>
+              <span class="project-date">Juillet 2025</span>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" tabindex="0">
+            <div class="project-media">
+              <img src="images/projet5.png" alt="Projet 5 — Mini réseau social" loading="lazy">
+              <div class="project-overlay">
+                <h3>Gestion de projet fictionnel</h3>
+                <p>Organisation de colonie de vacances fictive. Gestion complète du projet. </p>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Gestion de Projet</span>
+              <span class="project-date">Mai 2025</span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Parcours -->
+    <section id="parcours" class="section section-parcours">
+      <div class="container">
+        <h2 class="section-title">Parcours</h2>
+        <p class="section-subtitle">Une chronologie des étapes de mon parcours scolaire.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Naissance de la passion pour l'informatique</h3>
+              <p>Fascination pour les objets technologiques. Comment ça marche ? Pourquoi ça fait ça ?</p>
+              <time>Du début à la fin</time>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Baccalauréat Général</h3>
+              <p>Lycée Maurice Utrillo — Mention Bien. Spécialités Mathématique et Numérique Science Informatique.</p>
+              <time>2024</time>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>IUT de l'Université Sorbonne Paris Nord - BUT Informatique</h3>
+              <p>Actuellement en deuxième année, parcours Réalisation d'Application, Conception, Développement et Vérification.</p>
+              <time>2024 — Présent</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Convaincu ? Voici mes coordonnées.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>E-mail</h3>
+            <p><a href="mailto:alex.dupont@example.com">faizanishaq103@gmail.com</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h3>CV</h3>
+            <p><a href="cv.pdf" download>Télécharger mon CV (PDF)</a></p>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <div class="container footer-container">
+            <p>© <span id="currentYear"></span> Faizan ISHAQ — Tous droits réservés.</p>
+            <nav class="footer-nav">
+              <a href="#presentation">Présentation</a>
+              <a href="#projets">Projets</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

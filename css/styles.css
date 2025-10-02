@@ -1,0 +1,117 @@
+/* Reset moderne et règles de base */
+:root{
+  --red:#8b0000; /* deep red */
+  --royal-blue:#0b3d91; /* royal blue */
+  --gold:#d4af37; /* gold */
+  --bg:#faf7f5;
+  --muted:#6b6b6b;
+  --glass: rgba(255,255,255,0.6);
+  --max-width:1200px;
+}
+
+.lang-switch {
+  margin-left: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--gold);
+  color: #1a1a1a;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.lang-switch:hover {
+  background: #f0d58b;
+  transform: translateY(-2px);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial; color:#222;margin:0;background:linear-gradient(180deg,var(--bg),#fff)}
+img{max-width:100%;height:auto;display:block}
+.container{width:92%;max-width:var(--max-width);margin:0 auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* Header / navigation */
+.site-header{background:linear-gradient(90deg,var(--royal-blue),rgba(11,61,145,0.85));color:white;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
+.nav-container{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.logo{width:54px;height:54px;object-fit:cover;border-radius:8px;border:2px solid rgba(255,255,255,0.12)}
+.brand-text{font-weight:700;font-size:1.05rem;letter-spacing:0.6px}
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{color:rgba(255,255,255,0.95);text-decoration:none;padding:8px 12px;border-radius:6px;transition:background .18s,transform .12s}
+.nav-links a:hover{background:rgba(255,255,255,0.06);transform:translateY(-2px)}
+.nav-toggle{display:none;background:transparent;border:0;color:white;font-size:1.25rem}
+
+/* Hero */
+.hero{padding:48px 0}
+.hero-grid{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:center}
+.hero-photo img{width:300px;height:300px;object-fit:cover;border-radius:12px;border:6px solid var(--gold);box-shadow:0 8px 30px rgba(11,61,145,0.12)}
+.hero-text h1{font-size:2.2rem;margin:0 0 8px}
+.hero-text h2{margin:0 0 14px;color:var(--muted);font-weight:600}
+.accent-gold{color:var(--gold)}
+.hero-text p{line-height:1.55;color:#333}
+.hero-cta{margin-top:18px;display:flex;gap:12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;border:2px solid transparent;font-weight:600}
+.btn-primary{background:linear-gradient(90deg,var(--gold),#f0d58b);color:#1a1a1a}
+.btn-ghost{background:transparent;border:2px solid rgba(11,61,145,0.12);color:var(--royal-blue)}
+
+/* Sections */
+.section{padding:48px 0}
+.section-title{font-size:1.6rem;margin-bottom:6px}
+.section-subtitle{margin-top:0;margin-bottom:22px;color:var(--muted)}
+
+/* Skills */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.skill-card{background:linear-gradient(180deg,rgba(255,255,255,0.9),var(--glass));padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(11,61,145,0.06);text-align:center;border:1px solid rgba(11,61,145,0.06)}
+.skill-icon{width:86px;height:86px;margin:0 auto 12px;border-radius:10px;padding:8px;background:rgba(255,255,255,0.95)}
+.skill-card h3{margin:6px 0 8px}
+.skill-card p{font-size:0.95rem;color:var(--muted)}
+
+/* Projects grid */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.project-card{border-radius:12px;overflow:hidden;background:white;box-shadow:0 12px 30px rgba(11,61,145,0.08);transition:transform .18s}
+.project-card:focus-within, .project-card:hover{transform:translateY(-6px)}
+.project-media{position:relative;height:180px;overflow:hidden}
+.project-media img{width:100%;height:100%;object-fit:cover;display:block}
+.project-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.6));color:white;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;opacity:0;transform:translateY(6px);transition:opacity .18s,transform .18s}
+.project-card:hover .project-overlay, .project-card:focus-within .project-overlay{opacity:1;transform:translateY(0)}
+.project-meta{display:flex;justify-content:space-between;align-items:center;padding:12px 16px}
+.project-tag{background:rgba(11,61,145,0.06);padding:6px 10px;border-radius:999px;font-weight:600}
+.project-date{color:var(--muted);font-size:0.9rem}
+
+/* Timeline */
+.timeline{display:grid;gap:14px;padding:18px}
+.timeline-item{display:flex;gap:14px;align-items:flex-start}
+.timeline-dot{width:14px;height:14px;border-radius:50%;background:var(--royal-blue);box-shadow:0 0 0 4px rgba(212,175,55,0.12);margin-top:6px}
+.timeline-content{background:linear-gradient(180deg,rgba(255,255,255,0.95),#fff);padding:14px;border-radius:10px;box-shadow:0 8px 22px rgba(11,61,145,0.04);border-left:4px solid var(--gold)}
+.timeline-content h3{margin:0 0 6px}
+.timeline-content p{margin:0 0 6px;color:var(--muted)}
+.timeline-content time{font-weight:700;color:var(--royal-blue)}
+
+/* Contact */
+.contact-grid{display:flex;gap:18px;flex-wrap:wrap}
+.contact-card{flex:1 1 260px;background:linear-gradient(90deg,rgba(11,61,145,0.03),rgba(235,230,225,0.03));padding:18px;border-radius:10px;border:1px solid rgba(11,61,145,0.04)}
+.contact-card h3{margin:0 0 6px}
+.contact-card a{color:var(--royal-blue);text-decoration:none;font-weight:700}
+
+/* Footer */
+.site-footer{padding:24px 0;margin-top:16px;border-top:1px solid rgba(11,61,145,0.04)}
+.footer-container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.footer-nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .nav-links{display:none}
+  .nav-toggle{display:block}
+}
+
+@media (max-width:600px){
+  .project-media{height:160px}
+  .skill-icon{width:68px;height:68px}
+}
+
+/* Small utilities / extras to enlarge file and provide polished interactions */
+kbd{background:#111;color:#fff;padding:4px 8px;border-radius:6px;font-family:monospace}
+.progress{height:10px;background:rgba(0,0,0,0.05);border-radius:999px;overflow:hidden}
+.progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--royal-blue),var(--gold));width:40%}
+/* End of CSS file */

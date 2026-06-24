@@ -134,6 +134,14 @@ main{margin-top: 80px; /* hauteur approximative de la nav */}
   background-color: #f5f5f5;
 }
 
+#stage{
+  background-color: white;
+}
+
+#futur{
+  background-color: #f5f5f5;
+}
+
 #projets {
   background-color: white;
 }
